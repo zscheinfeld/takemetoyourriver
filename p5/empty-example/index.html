@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>p5.js example</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+  </style>
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+
+    <div class = "dropdowncontainer">
+      <select class = "dropbtn" id="mySelect" onchange="checklist()">
+        <option value="">Site
+        <option value="01115098">Peeptoad Brook At Elmdale Rd Nr North Scituate, Ri 
+        <option value="01115110">Huntinghouse Bk At Elmdale Rd At N Scituate, Ri 
+        <option value="01115114">Rush Brook Near Elmdale Rd Near North Scituate, Ri 
+        <option value="01115120">Unnamed Trib To Scituate Res Nr North Scituate, Ri 
+        <option value="01115170"> Moswansicut Stream Nr North Scituate, Ri 
+        <option value="01115183">Quonapaug Bk At Rt 116 Nr North Scituate, Ri 
+        <option value="01115184">Spruce Brook Nr North Scituate, Ri 
+        <option value="01115185">Windsor Brook At Windsor Rd Near South Foster, Ri 
+        <option value="01115187">Ponaganset River At South Foster, Ri
+        <option value="01115190">Dolly Cole Bk At Old Danielson Pk At S Foster, Ri 
+        <option value="01115265">Hemlock Brook At King Road Nr Foster, Ri 
+        <option value="01115275">Bear Tree Brook Nr Clayville, Ri 
+        <option value="01115276">Westconnaug Stream At Plainfield Pike, Ri 
+        <option value="01115278">Swamp Brook At Ponagansett Road Nr Clayville, Ri 
+        <option value="01115280">Cork Bk At Rockland Scituate Rd Nr Clayville, Ri 
+        <option value="01115297">Wilbur Hollow Bk At Old Plainfield Pk Nr Clayville 
+        <option value="01115630">Nooseneck River At Nooseneck, Ri 
+        <option value="01116000">South Branch Pawtuxet River At Washington, Ri 
+        <option value="01116500">Pawtuxet River At Cranston, Ri 
+
+      
+      </select>
+      
+      <div class = "informationcontainer">
+        <p id="demo" class="demostyle"></p> 
+        <p id="lat" class="demostyle"></p> 
+        <p id="long" class="demostyle"></p> 
+        <p id="discharge" class="demostyle"></p> 
+        <p id="time" class="demostyle"></p> 
+        <p id="name" class="demostyle"></p> 
+      </div>
+
+
+
+    <!-- <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Sites</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a id="site1" href="#"> PEEPTOAD BROOK AT ELMDALE RD NR NORTH SCITUATE, RI </a>
+        <a id="site2" href="#">HUNTINGHOUSE BK AT ELMDALE RD AT N SCITUATE, RI </a>
+        <a id="site3" href="#">RUSH BROOK NEAR ELMDALE RD NEAR NORTH SCITUATE, RI </a>
+        <a id="site4" href="#">UNNAMED TRIB TO SCITUATE RES NR NORTH SCITUATE, RI</a>
+        <a id="site5" href="#">RUSH BROOK NEAR ELMDALE RD NEAR NORTH SCITUATE, RI </a>
+        <a id="site6" href="#">MOSWANSICUT STREAM NR NORTH SCITUATE, RI</a>
+        <a id="site7" href="#">QUONAPAUG BK AT RT 116 NR NORTH SCITUATE, RI</a>
+        <a id="site8" href="#">SPRUCE BROOK NR NORTH SCITUATE, RI </a>
+        <a id="site9" href="#">WINDSOR BROOK AT WINDSOR RD NEAR SOUTH FOSTER, RI </a>
+        <a id="site10" href="#">PONAGANSET RIVER AT SOUTH FOSTER, RI  </a>
+        <a id="site11" href="#">DOLLY COLE BK AT OLD DANIELSON PK AT S FOSTER, RI</a>
+        <a id="site12" href="#">HEMLOCK BROOK AT KING ROAD NR FOSTER, RI </a>
+        <a id="site13" href="#">BEAR TREE BROOK NR CLAYVILLE, RI  </a>
+        <a id="site14" href="#">WESTCONNAUG STREAM AT PLAINFIELD PIKE, RI </a>
+        <a id="site15" href="#">SWAMP BROOK AT PONAGANSETT ROAD NR CLAYVILLE, RI</a>
+        <a id="site16" href="#">CORK BK AT ROCKLAND SCITUATE RD NR CLAYVILLE, RI</a>
+        <a id="site17" href="#">WILBUR HOLLOW BK AT OLD PLAINFIELD PK NR CLAYVILLE</a>
+        <a id="site18" href="#">NOOSENECK RIVER AT NOOSENECK, RI</a>
+        <a id="site19" href="#">SOUTH BRANCH PAWTUXET RIVER AT WASHINGTON, RI </a>
+        <a id="site20" href="#">PAWTUXET RIVER AT CRANSTON, RI  </a>
+
+      </div>
+    </div> -->
+  </div>
+
+  </main>
+</body>
+
+
+</html>
