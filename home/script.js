@@ -1,10 +1,15 @@
 // // homepage videos
 
+$( document ).ready(function() {
+  console.log( "document loaded" );
+});
+
 window.onload = () => {
 var vidcontainer = $("myVideo")
 var video1 = document.createElement('video');
 video1.src = '/Video/1.mp4'
 video1.autoplay = true;
+video1.loop = true;
 document.getElementById("myVideo").appendChild(video1);
 }
 
