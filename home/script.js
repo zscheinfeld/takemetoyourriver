@@ -1,3 +1,61 @@
+
+// p5 
+
+var r =[]
+var g =[]
+var b = []
+
+function preload() {
+  siteimg = loadImage("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/-71.6061754,41.8525992,14,0,0/1280x1280?access_token=pk.eyJ1IjoienNjaGVpbmZlbGQiLCJhIjoiY2tucWxpM3U3MDA2ajJ2bWsxM3lwdjdpMiJ9.ZxexsYC5Xg-rTB6LlHyWKg")
+}
+
+let incr = 0; 
+var theta; 
+
+class Particle {
+// setting the co-ordinates, radius and the
+// speed of a particle in both the co-ordinates axes.
+  constructor(){
+    this.x = random(0,width);
+    this.y = random(0,height);
+    this.r = random(5,10);
+
+  }
+
+// creation of a particle.
+  createParticle() {
+    noStroke();
+    this.blue = random(0,155)
+    circle(this.x,this.y,this.r);
+  }
+
+// setting the particle in motion.
+  moveParticle() {
+    theta = noise(this.x * .006,this.y * .004,incr) * (2*PI);
+    this.x = this.x + (2*cos(theta)) - 2
+    this.y = this.y + (2*sin(theta))
+    incr +=  .008;
+  }
+
+wrapParticle(){
+  if (this.x<0){
+    this.x= width
+  }
+  if (this.x>width){
+    this.x= 0
+  }
+  if (this.y<0){
+    this.y= height
+  }
+  if (this.y>height){
+    this.y= 0
+  }
+}
+
+}
+
+let particles = [];
+
 var api_path = "https://waterservices.usgs.gov/nwis/iv/?format=json&sites="
 
 function gotData(data){
@@ -5,13 +63,40 @@ function gotData(data){
 }
 
 function setup() {
-  createCanvas(1920, 1080)
-  image(mapimg,0,0)
+  createCanvas(1920, 1080).addClass('p5')
+  background(0) 
+  image(siteimg,0,0)
+  frameRate(20);
+  for(let i = 0;i<5000;i++){
+    particles.push(new Particle());
 }
 
-function preload() {
-  mapimg = loadImage("https://maps.googleapis.com/maps/api/staticmap?center=41.833989,-71.6061754&zoom=14&size=640x640&maptype=satellite&key=AIzaSyCxD0bThirEQvKyGhO3kUbhuWZgu2GBccM")
+siteimg.loadPixels();
+for (var y = 0; y<siteimg.height; y++){
+for (var x = 0; x<siteimg.width; x++){
+  var index = (x + y *siteimg.width)*4;
+  r.push(siteimg.pixels[index + 0])
+  g.push(siteimg.pixels[index + 1])
+  b.push(siteimg.pixels[index + 2])
+}}
+
+console.log(index + "index")
+console.log(r)
 }
+
+function draw() {
+  for(let i = 0;i<particles.length;i++) {
+    particles[i].createParticle();
+    fill(0, g[i], b[i],90)
+    particles[i].moveParticle();
+    particles[i].wrapParticle(); 
+    }
+    background(0,0,0,10) 
+    // image(siteimg,0,0,5)
+    noLoop();
+}
+
+
 
 function initMap() {
   const river1 = { lat: 41.8525992, lng: -71.6061754 };
@@ -305,6 +390,7 @@ function initMap() {
     center: river1,
     map.setZoom(10);
     map.setCenter(marker1114000.getPosition());
+    noLoop()
   });
 
 
