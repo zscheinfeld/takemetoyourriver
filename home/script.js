@@ -1,3 +1,28 @@
+// // homepage videos
+
+window.onload = () => {
+var vidcontainer = $("myVideo")
+var video1 = document.createElement('video');
+video1.src = '/Video/1.mp4'
+video1.autoplay = true;
+document.getElementById("myVideo").appendChild(video1);
+}
+
+
+// $('.myVideo').html(video1);
+// // video1.play();
+
+// // var videoArray = new Array();
+// // videoArray[0] = video1
+// // console.log(videoArray[0]);
+// // // imgArray[1] = new Image();
+// // // imgArray[1].src = '/Video/2.mp4';
+// // // imgArray[2] = new Image();
+// // // imgArray[2].src = '/Video/3.mp4';
+// // // imgArray[3] = new Video();
+// // // imgArray[3].src = '/Video/4.mp4';
+
+// // $(".myVideo").prepend(videoArray[0]);
 
 // p5 
 
@@ -8,6 +33,7 @@ var b = []
 function preload() {
   siteimg = loadImage("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/-71.6061754,41.8525992,14,0,0/1280x1280?access_token=pk.eyJ1IjoienNjaGVpbmZlbGQiLCJhIjoiY2tucWxpM3U3MDA2ajJ2bWsxM3lwdjdpMiJ9.ZxexsYC5Xg-rTB6LlHyWKg")
 }
+
 
 let incr = 0; 
 var theta; 
