@@ -471,7 +471,7 @@ function initMap() {
   var varaudio1115170 = document.getElementById("audio1115170");
 
   marker.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/1.jpg"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/1"/>')
     console.log("hover")
   });
 
