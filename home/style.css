@@ -255,6 +255,7 @@ body {
   opacity: 80%;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 .aboutpagecontainerchild{
