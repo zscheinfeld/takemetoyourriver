@@ -471,7 +471,7 @@ function initMap() {
   var varaudio1115170 = document.getElementById("audio1115170");
 
   marker.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/1.JPG"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/1.jpg"/>')
     console.log("hover")
   });
 
@@ -572,7 +572,7 @@ function initMap() {
   });
 
   marker1115120.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/2.JPG"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/2.jpg"/>')
     console.log("hover")
   });
 
@@ -630,7 +630,7 @@ function initMap() {
   });
 
   marker1114500.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/3.JPG"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/3.jpg"/>')
     console.log("hover")
   });
 
@@ -686,7 +686,7 @@ function initMap() {
   });
 
   marker01115098.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/5.JPG"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/5.jpg"/>')
     console.log("hover")
   });
 
@@ -746,7 +746,7 @@ function initMap() {
   });
 
   marker1116500.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/4.JPG"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/4.jpg"/>')
     console.log("hover")
   });
 
