@@ -7,12 +7,24 @@
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script src="script.js"></script>
   </head>
   <body>
-    <!-- <audio src="/Audio/01115098.m4a" autoplay="autoplay" loop="loop"></audio> -->
+    <div class ="titlecontainer">
+      <div class ="titleinformation">
+        <div class ="title">Take Me To Your River</div>
+        <div class ="siteenter">Click to enter</div>
+      </div>
+    </div>
+    <video autoplay loop id="myVideo">
+      <source src="/Video/1.mp4" type="video/mp4">
+    </video>
     <div class="reset" id="reset">
     </div>
     <div id="map"></div>
@@ -22,7 +34,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxD0bThirEQvKyGhO3kUbhuWZgu2GBccM&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-    <div id = "myVideo"></div>
-    </video>
+   
   </body>
 </html>
