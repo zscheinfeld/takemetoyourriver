@@ -3,6 +3,7 @@
 #map {
   height: 100%;
   display: none;
+  z-index: 2;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -13,17 +14,32 @@ body {
   padding: 0;
 }
 
+@keyframes infader{
+  0% {opacity:0%;}
+  100% {opacity:100%;}
+}
+
 .reset{
-  height: 100px;
+  height: 130px;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
-  background-color: blueviolet;
+  background-color: #3d3d3d;
+  animation-name: infader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   display: none;
 }
 
 .p5{
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index:20;
+  animation-name: infader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   display: none;
 }
 
@@ -64,4 +80,164 @@ body {
   color: white;
   text-align: center;
   margin-top: 2%;
+}
+
+@keyframes fader{
+  0% {opacity:100%;}
+  100% {opacity:0%;}
+}
+
+.fade{
+  animation-name: fader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mapfader{
+  0% {opacity:0%;}
+  100% {opacity:100%;}
+}
+
+.mapplay{
+  height: 100%;
+  animation-name: mapfader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.visualtitletype{
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  justify-content: space-between;
+  display: none;
+  animation-name: infader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  display: none;
+  
+ 
+}
+
+.visualinformation{
+  height: 130px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.title2{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center; 
+}
+
+.visualinformationtype{
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+  color: white;
+  text-align: center;
+  line-height: 1.25rem;
+  display: none;
+  
+}
+
+.visualinformationdescription{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.picture{
+  position: fixed;
+  top: 12%;
+  z-index: 7;
+  height: 250px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.picture img{
+  height: 250px;
+  object-fit: cover;
+
+}
+
+.container {
+  width: 33%;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttoncontainer{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+.aboutbuttoncontainer{
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #3d3d3d;
+  text-align: center;
+  z-index: 10;
+}
+
+.resetbutton{
+  display: none;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 14;
+  bottom:130px;
+  animation-name: infader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
+}
+
+.resetbuttonbutton{
+  background-color: white;
+  width: 15%;
+  height: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #3d3d3d;
+  justify-content: center;
+  display: none;
+  align-items: center;
+
+
+
+}
+
+.visualinformationtype2{
+  font-family: 'Roboto', sans-serif;
+  font-size: .7rem;
+  color: white;
+  text-align: center;
+  line-height: 1.5rem;
+  display: none;
+  
 }
