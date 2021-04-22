@@ -36,10 +36,9 @@ $( document ).ready(function() {
     if (aboutcounter % 2 == 1){
     console.log( "click");
     $(".aboutpagecontainer").css("display", "flex")}
-    else{
+    if (aboutcounter % 2 == 0){
       console.log("no")
       $(".aboutpagecontainer").css("display", "none")}
-    
     aboutcounter = aboutcounter + 1
     
   });
