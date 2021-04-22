@@ -262,8 +262,9 @@ body {
   width: 50%;
   color: white;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  position: fixed;
+  top: 0;
   
 }
 
