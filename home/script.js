@@ -45,7 +45,6 @@ $( document ).ready(function() {
 });
 
 
-
 function preload() {
   siteimg01116500 = loadImage("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/-71.445057,41.750934,14,0,0/1280x1280?access_token=pk.eyJ1IjoienNjaGVpbmZlbGQiLCJhIjoiY2tucWxpM3U3MDA2ajJ2bWsxM3lwdjdpMiJ9.ZxexsYC5Xg-rTB6LlHyWKg")
 

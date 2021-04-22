@@ -260,6 +260,8 @@ body {
 .aboutpagecontainerchild{
   width: 50%;
   color: white;
+  display: flex;
+  justify-content: center;
   
 }
 
