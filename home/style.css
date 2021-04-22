@@ -252,7 +252,7 @@ body {
   position: fixed;
   z-index: 40;
   display: none;
-  opacity: 80%;
+  opacity: 1000%;
   align-items: center;
   justify-content: center;
   overflow-y: scroll;
