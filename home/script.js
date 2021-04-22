@@ -29,6 +29,24 @@ var r =[]
 var g =[]
 var b = []
 
+var aboutcounter = 1;
+
+$( document ).ready(function() {
+  $("#aboutbutton" ).click(function() {
+    if (aboutcounter % 2 == 1){
+    console.log( "click");
+    $(".aboutpagecontainer").css("display", "flex")}
+    else{
+      console.log("no")
+      $(".aboutpagecontainer").css("display", "none")}
+    
+    aboutcounter = aboutcounter + 1
+    
+  });
+});
+
+
+
 function preload() {
   siteimg01116500 = loadImage("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/-71.445057,41.750934,14,0,0/1280x1280?access_token=pk.eyJ1IjoienNjaGVpbmZlbGQiLCJhIjoiY2tucWxpM3U3MDA2ajJ2bWsxM3lwdjdpMiJ9.ZxexsYC5Xg-rTB6LlHyWKg")
 
@@ -167,6 +185,7 @@ function draw() {
        
 }
 
+// about 
 
 
 
@@ -191,7 +210,11 @@ $(document).click(function() {
   if (clicked > 1){
     $("#myVideo").css("display", "none")
     }
+
+    
 });
+
+
 
 var infocounter = 0;
 
