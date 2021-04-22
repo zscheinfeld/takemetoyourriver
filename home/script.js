@@ -572,7 +572,7 @@ function initMap() {
   });
 
   marker1115120.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/2.jpg"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/2.JPG"/>')
     console.log("hover")
   });
 
@@ -630,7 +630,7 @@ function initMap() {
   });
 
   marker1114500.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/3.jpg"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/3.JPG"/>')
     console.log("hover")
   });
 
@@ -686,7 +686,7 @@ function initMap() {
   });
 
   marker01115098.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/5.jpg"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/5.JPG"/>')
     console.log("hover")
   });
 
@@ -746,7 +746,7 @@ function initMap() {
   });
 
   marker1116500.addListener("mouseover", () => {
-    $('.picture').prepend('<img src="/takemetoyourriver/Images/4.jpg"/>')
+    $('.picture').prepend('<img src="/takemetoyourriver/Images/4.JPG"/>')
     console.log("hover")
   });
 
